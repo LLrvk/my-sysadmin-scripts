@@ -1,6 +1,6 @@
 #!/bin/bash
-N=5
-for i in $(seq 1 3); do
+N=5 # интервал в секундах
+for i in {1..3}; do
 echo "--- $(date '+%Y-%m-%d %H:%M:%S') ---" >> monitor.log
 free -h >> monitor.log
 df -h >> monitor.log
